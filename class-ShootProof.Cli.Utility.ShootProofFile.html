@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class ShootProof\Cli\Utility\ShootProofFile | ShootProof Command Line Tool</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-ShootProof.html">
+						ShootProof<span></span>
+					</a>
+
+						<ul>
+				<li class="active main">
+					<a href="namespace-ShootProof.Cli.html">
+						Cli<span></span>
+					</a>
+
+						<ul>
+				<li class="main">
+					<a href="namespace-ShootProof.Cli.Command.html">
+						Command					</a>
+
+						</li>
+				<li class="active main">
+					<a href="namespace-ShootProof.Cli.Utility.html">
+						Utility					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-ShootProof.Cli.Validators.html">
+						Validators					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-ShootProof.Cli.Utility.ConfigWriter.html">ConfigWriter</a></li>
+				<li><a href="class-ShootProof.Cli.Utility.DirectoryListFactory.html">DirectoryListFactory</a></li>
+				<li><a href="class-ShootProof.Cli.Utility.FileDownloader.html">FileDownloader</a></li>
+				<li><a href="class-ShootProof.Cli.Utility.FileSetCalculator.html">FileSetCalculator</a></li>
+				<li><a href="class-ShootProof.Cli.Utility.OptionTransformer.html">OptionTransformer</a></li>
+				<li><a href="class-ShootProof.Cli.Utility.ResultPager.html">ResultPager</a></li>
+				<li class="active"><a href="class-ShootProof.Cli.Utility.ShootProofFile.html">ShootProofFile</a></li>
+				<li><a href="class-ShootProof.Cli.Utility.StdinReader.html">StdinReader</a></li>
+				<li><a href="class-ShootProof.Cli.Utility.TildeExpander.html">TildeExpander</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-ShootProof.Cli.Utility.html" title="Summary of ShootProof\Cli\Utility"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ShootProofFile</h1>
+
+
+	<div class="description">
+	<p>Represents a ShootProof file</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-ShootProof.html">ShootProof</a>\<a href="namespace-ShootProof.Cli.html">Cli</a>\<a href="namespace-ShootProof.Cli.Utility.html">Utility</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-ShootProof.Cli.Utility.ShootProofFile.html#14-125" title="Go to source code">Utility/ShootProofFile.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-ShootProof.Cli.Utility.ShootProofFile.html#48-61" title="Go to source code">__construct</a>( <span>string <var>$name</var> = <span class="php-quote">''</span></span>, <span>string <var>$id</var> = <span class="php-quote">''</span></span>, <span>array <var>$url</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Constructs a ShootProof file object</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Constructs a ShootProof file object</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>The file name</dd>
+					<dt><var>$id</var></dt>
+					<dd>The ShootProof ID for the file</dd>
+					<dt><var>$url</var></dt>
+					<dd>An array of URLs for the file (refer to self::$url)</dd>
+				</dl></div>
+
+
+
+				<h4>See</h4>
+				<div class="list">
+						<code><a href="class-ShootProof.Cli.Utility.ShootProofFile.html#$url">ShootProof\Cli\Utility\ShootProofFile::<var>$url</var></a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__toString" id="___toString">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___toString">#</a>
+		<code><a href="source-class-ShootProof.Cli.Utility.ShootProofFile.html#63-71" title="Go to source code">__toString</a>( )</code>
+
+		<div class="description short">
+			<p>Converts a ShootProof file to a string representation</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Converts a ShootProof file to a string representation</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="arrayFactory" id="_arrayFactory">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-ShootProof.Cli.Utility.ShootProofFile.html">ShootProof\Cli\Utility\ShootProofFile</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_arrayFactory">#</a>
+		<code><a href="source-class-ShootProof.Cli.Utility.ShootProofFile.html#73-82" title="Go to source code">arrayFactory</a>( <span>array <var>$data</var></span> )</code>
+
+		<div class="description short">
+			<p>Creates a new ShootProof file from an array of data</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates a new ShootProof file from an array of data</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd>An associative array containing name, id, and url data</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-ShootProof.Cli.Utility.ShootProofFile.html">ShootProof\Cli\Utility\ShootProofFile</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="stringFactory" id="_stringFactory">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-ShootProof.Cli.Utility.ShootProofFile.html">ShootProof\Cli\Utility\ShootProofFile</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_stringFactory">#</a>
+		<code><a href="source-class-ShootProof.Cli.Utility.ShootProofFile.html#84-93" title="Go to source code">stringFactory</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>Creates a new ShootProof file from a file name</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates a new ShootProof file from a file name</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>File name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-ShootProof.Cli.Utility.ShootProofFile.html">ShootProof\Cli\Utility\ShootProofFile</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getName" id="_getName">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getName">#</a>
+		<code><a href="source-class-ShootProof.Cli.Utility.ShootProofFile.html#95-103" title="Go to source code">getName</a>( )</code>
+
+		<div class="description short">
+			<p>Gets the file name</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the file name</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getId" id="_getId">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getId">#</a>
+		<code><a href="source-class-ShootProof.Cli.Utility.ShootProofFile.html#105-113" title="Go to source code">getId</a>( )</code>
+
+		<div class="description short">
+			<p>Gets the ShootProof ID for the file</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the ShootProof ID for the file</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getUrl" id="_getUrl">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getUrl">#</a>
+		<code><a href="source-class-ShootProof.Cli.Utility.ShootProofFile.html#115-124" title="Go to source code">getUrl</a>( <span> <var>$type</var></span> )</code>
+
+		<div class="description short">
+			<p>Gets the URL identified by $type</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the URL identified by $type</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						<code><a href="class-ShootProof.Cli.Utility.ShootProofFile.html#$url">ShootProof\Cli\Utility\ShootProofFile::<var>$url</var></a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="id" id="$id">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-ShootProof.Cli.Utility.ShootProofFile.html#19-23" title="Go to source code"><var>$id</var></a>
+
+			<div class="description short">
+				<p>ShootProof ID of the file</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>ShootProof ID of the file</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$id" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="name" id="$name">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-ShootProof.Cli.Utility.ShootProofFile.html#25-29" title="Go to source code"><var>$name</var></a>
+
+			<div class="description short">
+				<p>File name</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>File name</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$name" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="url" id="$url">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-ShootProof.Cli.Utility.ShootProofFile.html#32-46" title="Go to source code"><var>$url</var></a>
+
+			<div class="description short">
+				<p>Array of URLs for the file</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Array of URLs for the file</p>
+
+<pre>[
+    <span class="php-quote">'small'</span> =&gt; <span class="php-quote">'http://...'</span>,
+    <span class="php-quote">'medium'</span> =&gt; <span class="php-quote">'http://...'</span>,
+    <span class="php-quote">'large'</span> =&gt; <span class="php-quote">'http://...'</span>,
+    <span class="php-quote">'original'</span> =&gt; <span class="php-quote">'http://...'</span>,
+]</pre>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$url" class="anchor">#</a>
+				<code>[]</code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		ShootProof Command Line Tool API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class ShootProof\Cli\ErrorHandler | ShootProof Command Line Tool</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-ShootProof.html">
+						ShootProof<span></span>
+					</a>
+
+						<ul>
+				<li class="active main">
+					<a href="namespace-ShootProof.Cli.html">
+						Cli<span></span>
+					</a>
+
+						<ul>
+				<li class="main">
+					<a href="namespace-ShootProof.Cli.Command.html">
+						Command					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-ShootProof.Cli.Utility.html">
+						Utility					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-ShootProof.Cli.Validators.html">
+						Validators					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-ShootProof.Cli.Compiler.html">Compiler</a></li>
+				<li><a href="class-ShootProof.Cli.DependencyConfig.html">DependencyConfig</a></li>
+				<li class="active"><a href="class-ShootProof.Cli.ErrorHandler.html">ErrorHandler</a></li>
+				<li><a href="class-ShootProof.Cli.Options.html">Options</a></li>
+				<li><a href="class-ShootProof.Cli.OptionsFactory.html">OptionsFactory</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-ShootProof.Cli.html" title="Summary of ShootProof\Cli"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ErrorHandler</h1>
+
+
+	<div class="description">
+	<p>A custom error handler for dealing with ShootProof command line tool error messages</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-ShootProof.html">ShootProof</a>\<a href="namespace-ShootProof.Cli.html">Cli</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-ShootProof.Cli.ErrorHandler.html#19-121" title="Go to source code">ErrorHandler.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="register" id="_register">
+
+		<td class="attributes"><code>
+			 public static
+
+			<code><a href="class-ShootProof.Cli.ErrorHandler.html">ShootProof\Cli\ErrorHandler</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_register">#</a>
+		<code><a href="source-class-ShootProof.Cli.ErrorHandler.html#45-73" title="Go to source code">register</a>( <span>Psr\Log\LoggerInterface <var>$logger</var></span>, <span>array|false <var>$errorLevelMap</var> = <span class="php-keyword1">array</span>()</span>, <span>integer|false <var>$exceptionLevel</var> = <span class="php-keyword1">null</span></span>, <span>integer|false <var>$fatalLevel</var> = <span class="php-keyword1">null</span> </span> )</code>
+
+		<div class="description short">
+			<p>Registers a new ErrorHandler for a given Logger</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Registers a new ErrorHandler for a given Logger</p>
+
+<p>By default it will handle errors, exceptions and fatal errors</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$logger</var></dt>
+					<dd></dd>
+					<dt><var>$errorLevelMap</var></dt>
+					<dd><p>an array of E_* constant to LogLevel::* constant mapping,
+    or false to disable error handling</p></dd>
+					<dt><var>$exceptionLevel</var></dt>
+					<dd>a LogLevel::* constant, or false to disable exception handling</dd>
+					<dt><var>$fatalLevel</var></dt>
+					<dd>a LogLevel::* constant, or false to disable fatal error handling</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-ShootProof.Cli.ErrorHandler.html">ShootProof\Cli\ErrorHandler</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-ShootProof.Cli.ErrorHandler.html#75-83" title="Go to source code">__construct</a>( <span>Psr\Log\LoggerInterface <var>$logger</var></span>, <span>Monolog\ErrorHandler <var>$monolog</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$logger</var></dt>
+					<dd>A logger for capturing and writing error messages</dd>
+					<dt><var>$monolog</var></dt>
+					<dd>Monolog error handler for passing through to Monolog</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="registerExceptionHandler" id="_registerExceptionHandler">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_registerExceptionHandler">#</a>
+		<code><a href="source-class-ShootProof.Cli.ErrorHandler.html#85-98" title="Go to source code">registerExceptionHandler</a>( <span>string <var>$level</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$callPrevious</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			<p>Registers an exception handler</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Registers an exception handler</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$level</var></dt>
+					<dd>One of the LogLevel::* constants</dd>
+					<dt><var>$callPrevious</var></dt>
+					<dd>Whether to also call previous exceptions in the chain</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="handleException" id="_handleException">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_handleException">#</a>
+		<code><a href="source-class-ShootProof.Cli.ErrorHandler.html#100-120" title="Go to source code">handleException</a>( <span><code><a href="class-Exception.html">Exception</a></code> <var>$e</var></span> )</code>
+
+		<div class="description short">
+			<p>Handles an exception</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Handles an exception</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$e</var></dt>
+					<dd>The exception to handle</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="logger" id="$logger">
+		<td class="attributes"><code>
+			protected  
+			Psr\Log\LoggerInterface
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-ShootProof.Cli.ErrorHandler.html#24-27" title="Go to source code"><var>$logger</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$logger" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="monologHandler" id="$monologHandler">
+		<td class="attributes"><code>
+			protected  
+			Monolog\ErrorHandler
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-ShootProof.Cli.ErrorHandler.html#29-32" title="Go to source code"><var>$monologHandler</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$monologHandler" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="uncaughtExceptionLevel" id="$uncaughtExceptionLevel">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-ShootProof.Cli.ErrorHandler.html#34-38" title="Go to source code"><var>$uncaughtExceptionLevel</var></a>
+
+			<div class="description short">
+				<p>One of the LogLevel::* constants</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>One of the LogLevel::* constants</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$uncaughtExceptionLevel" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="previousExceptionHandler" id="$previousExceptionHandler">
+		<td class="attributes"><code>
+			protected  
+			callable
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-ShootProof.Cli.ErrorHandler.html#40-43" title="Go to source code"><var>$previousExceptionHandler</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$previousExceptionHandler" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		ShootProof Command Line Tool API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

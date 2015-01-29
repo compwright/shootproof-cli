@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class ShootProof\Cli\OptionsFactory | ShootProof Command Line Tool</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-ShootProof.html">
+						ShootProof<span></span>
+					</a>
+
+						<ul>
+				<li class="active main">
+					<a href="namespace-ShootProof.Cli.html">
+						Cli<span></span>
+					</a>
+
+						<ul>
+				<li class="main">
+					<a href="namespace-ShootProof.Cli.Command.html">
+						Command					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-ShootProof.Cli.Utility.html">
+						Utility					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-ShootProof.Cli.Validators.html">
+						Validators					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-ShootProof.Cli.Compiler.html">Compiler</a></li>
+				<li><a href="class-ShootProof.Cli.DependencyConfig.html">DependencyConfig</a></li>
+				<li><a href="class-ShootProof.Cli.ErrorHandler.html">ErrorHandler</a></li>
+				<li><a href="class-ShootProof.Cli.Options.html">Options</a></li>
+				<li class="active"><a href="class-ShootProof.Cli.OptionsFactory.html">OptionsFactory</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-ShootProof.Cli.html" title="Summary of ShootProof\Cli"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class OptionsFactory</h1>
+
+
+	<div class="description">
+	<p>Factory for building an Options object</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-ShootProof.html">ShootProof</a>\<a href="namespace-ShootProof.Cli.html">Cli</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-ShootProof.Cli.OptionsFactory.html#20-116" title="Go to source code">OptionsFactory.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-ShootProof.Cli.OptionsFactory.html#40-48" title="Go to source code">__construct</a>( <span>Aura\Cli\Context <var>$context</var></span> )</code>
+
+		<div class="description short">
+			<p>Constructs an options factory</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Constructs an options factory</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$context</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setBaseConfig" id="_setBaseConfig">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setBaseConfig">#</a>
+		<code><a href="source-class-ShootProof.Cli.OptionsFactory.html#50-60" title="Go to source code">setBaseConfig</a>( <span>array <var>$getopt</var> = []</span>, <span>array <var>$validators</var> = []</span>, <span>array <var>$defaults</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Sets up the base configuration for options</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sets up the base configuration for options</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$getopt</var></dt>
+					<dd>Options data</dd>
+					<dt><var>$validators</var></dt>
+					<dd>Validators to validate the options</dd>
+					<dt><var>$defaults</var></dt>
+					<dd>Default values for the options</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="newInstance" id="_newInstance">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-ShootProof.Cli.Options.html">ShootProof\Cli\Options</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_newInstance">#</a>
+		<code><a href="source-class-ShootProof.Cli.OptionsFactory.html#62-105" title="Go to source code">newInstance</a>( <span>array <var>$getopt</var> = []</span>, <span>array <var>$validators</var> = []</span>, <span>array <var>$defaults</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Creates and returns a new Options instance</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates and returns a new Options instance</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$getopt</var></dt>
+					<dd>Options data</dd>
+					<dt><var>$validators</var></dt>
+					<dd>Validators to validate the options</dd>
+					<dt><var>$defaults</var></dt>
+					<dd>Default values for the options</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-ShootProof.Cli.Options.html">ShootProof\Cli\Options</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getLastError" id="_getLastError">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getLastError">#</a>
+		<code><a href="source-class-ShootProof.Cli.OptionsFactory.html#107-115" title="Go to source code">getLastError</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the last exception encountered when processing options</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the last exception encountered when processing options</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>|null
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="config" id="$config">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-ShootProof.Cli.OptionsFactory.html#25-28" title="Go to source code"><var>$config</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$config" class="anchor">#</a>
+				<code>[]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="context" id="$context">
+		<td class="attributes"><code>
+			protected  
+			Aura\Cli\Context
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-ShootProof.Cli.OptionsFactory.html#30-33" title="Go to source code"><var>$context</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$context" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="error" id="$error">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-ShootProof.Cli.OptionsFactory.html#35-38" title="Go to source code"><var>$error</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$error" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		ShootProof Command Line Tool API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

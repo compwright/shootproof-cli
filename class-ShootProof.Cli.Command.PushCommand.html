@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class ShootProof\Cli\Command\PushCommand | ShootProof Command Line Tool</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-ShootProof.html">
+						ShootProof<span></span>
+					</a>
+
+						<ul>
+				<li class="active main">
+					<a href="namespace-ShootProof.Cli.html">
+						Cli<span></span>
+					</a>
+
+						<ul>
+				<li class="active main">
+					<a href="namespace-ShootProof.Cli.Command.html">
+						Command					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-ShootProof.Cli.Utility.html">
+						Utility					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-ShootProof.Cli.Validators.html">
+						Validators					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-ShootProof.Cli.Command.AccesslevelCommand.html">AccesslevelCommand</a></li>
+				<li><a href="class-ShootProof.Cli.Command.BaseCommand.html">BaseCommand</a></li>
+				<li><a href="class-ShootProof.Cli.Command.HelpCommand.html">HelpCommand</a></li>
+				<li><a href="class-ShootProof.Cli.Command.PullCommand.html">PullCommand</a></li>
+				<li class="active"><a href="class-ShootProof.Cli.Command.PushCommand.html">PushCommand</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-ShootProof.Cli.Command.HelpableCommandInterface.html">HelpableCommandInterface</a></li>
+			</ul>
+
+			<h3>Traits</h3>
+			<ul>
+				<li><a href="class-ShootProof.Cli.Command.HelpableCommandTrait.html">HelpableCommandTrait</a></li>
+			</ul>
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-ShootProof.Cli.Command.html" title="Summary of ShootProof\Cli\Command"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class PushCommand</h1>
+
+
+	<div class="description">
+	<p>Provides the shootproof-cli push command</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-ShootProof.Cli.Command.BaseCommand.html"><span>ShootProof\Cli\Command\BaseCommand</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>ShootProof\Cli\Command\PushCommand</span></b>			
+			 implements 
+				<a href="class-ShootProof.Cli.Command.HelpableCommandInterface.html"><span>ShootProof\Cli\Command\HelpableCommandInterface</span></a>
+			
+			 uses 
+					<a href="class-ShootProof.Cli.Command.HelpableCommandTrait.html"><span>ShootProof\Cli\Command\HelpableCommandTrait</span></a>
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-ShootProof.html">ShootProof</a>\<a href="namespace-ShootProof.Cli.html">Cli</a>\<a href="namespace-ShootProof.Cli.Command.html">Command</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-ShootProof.Cli.Command.PushCommand.html#28-393" title="Go to source code">Command/PushCommand.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getValidators" id="_getValidators">
+
+		<td class="attributes"><code>
+			 protected 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getValidators">#</a>
+		<code><a href="source-class-ShootProof.Cli.Command.PushCommand.html#99-112" title="Go to source code">getValidators</a>( )</code>
+
+		<div class="description short">
+			<p>Returns an array of validators for validating options passed to this command</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns an array of validators for validating options passed to this command</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDefaults" id="_getDefaults">
+
+		<td class="attributes"><code>
+			 protected 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDefaults">#</a>
+		<code><a href="source-class-ShootProof.Cli.Command.PushCommand.html#114-128" title="Go to source code">getDefaults</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the default target option (album or event) for this command</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the default target option (album or event) for this command</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="processDirectory" id="_processDirectory">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_processDirectory">#</a>
+		<code><a href="source-class-ShootProof.Cli.Command.PushCommand.html#130-253" title="Go to source code">processDirectory</a>( <span>string <var>$dir</var></span>, <span><code><a href="class-ShootProof.Cli.Options.html">ShootProof\Cli\Options</a></code> <var>$baseOptions</var></span>, <span><code><a href="class-ShootProof.Cli.OptionsFactory.html">ShootProof\Cli\OptionsFactory</a></code> <var>$optionsFactory</var></span> )</code>
+
+		<div class="description short">
+			<p>Pushes (uploads) files to ShootProof from the specified local directory</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Pushes (uploads) files to ShootProof from the specified local directory</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$dir</var></dt>
+					<dd>The directory to process</dd>
+					<dt><var>$baseOptions</var></dt>
+					<dd></dd>
+					<dt><var>$optionsFactory</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="uploadFile" id="_uploadFile">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_uploadFile">#</a>
+		<code><a href="source-class-ShootProof.Cli.Command.PushCommand.html#255-282" title="Go to source code">uploadFile</a>( <span>string <var>$filepath</var></span>, <span>integer <var>$eventId</var></span>, <span>integer|null <var>$albumId</var> = <span class="php-keyword1">null</span></span>, <span>integer|null <var>$retryLimit</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Uploads a file from disk to a ShootProof event</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Uploads a file from disk to a ShootProof event</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filepath</var></dt>
+					<dd>The path to the local file to upload</dd>
+					<dt><var>$eventId</var></dt>
+					<dd>The ShootProof ID of the event to which this file should belong</dd>
+					<dt><var>$albumId</var></dt>
+					<dd>Optionally, the ShootProof ID of the album to which this file should belong</dd>
+					<dt><var>$retryLimit</var></dt>
+					<dd>Optionally, the number of times we should attempt to upload (defaults to 1)</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-RuntimeException.html">RuntimeException</a></code><br>if upload fails and haltOnError is true
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateFile" id="_updateFile">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_updateFile">#</a>
+		<code><a href="source-class-ShootProof.Cli.Command.PushCommand.html#284-310" title="Go to source code">updateFile</a>( <span>string <var>$filepath</var></span>, <span>integer <var>$photoId</var></span>, <span>integer|null <var>$retryLimit</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Updates a ShootProof photo with one from local disk</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Updates a ShootProof photo with one from local disk</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filepath</var></dt>
+					<dd>The path to the local file to upload</dd>
+					<dt><var>$photoId</var></dt>
+					<dd>The ShootProof ID of the photo this file should update</dd>
+					<dt><var>$retryLimit</var></dt>
+					<dd>Optionally, the number of times we should attempt to update (defaults to 1)</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-RuntimeException.html">RuntimeException</a></code><br>if update fails and haltOnError is true
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="deleteFile" id="_deleteFile">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_deleteFile">#</a>
+		<code><a href="source-class-ShootProof.Cli.Command.PushCommand.html#312-337" title="Go to source code">deleteFile</a>( <span>integer <var>$photoId</var></span>, <span>integer|null <var>$retryLimit</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Deletes a ShootProof photo</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Deletes a ShootProof photo</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$photoId</var></dt>
+					<dd>The ShootProof ID of the photo to delete</dd>
+					<dt><var>$retryLimit</var></dt>
+					<dd>Optionally, the number of times we should attempt to delete (defaults to 1)</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-RuntimeException.html">RuntimeException</a></code><br>if delete fails and haltOnError is true
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createEvent" id="_createEvent">
+
+		<td class="attributes"><code>
+			 protected 
+
+			integer|string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createEvent">#</a>
+		<code><a href="source-class-ShootProof.Cli.Command.PushCommand.html#339-356" title="Go to source code">createEvent</a>( <span><code><a href="class-ShootProof.Cli.Options.html">ShootProof\Cli\Options</a></code> <var>$options</var></span>, <span>string <var>$defaultName</var></span> )</code>
+
+		<div class="description short">
+			<p>Creates a new ShootProof gallery (event)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates a new ShootProof gallery (event)</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$options</var></dt>
+					<dd></dd>
+					<dt><var>$defaultName</var></dt>
+					<dd>Name to use when creating the event if eventName option not set</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer|string<br>ShootProof ID of the event created
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createAlbum" id="_createAlbum">
+
+		<td class="attributes"><code>
+			 protected 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createAlbum">#</a>
+		<code><a href="source-class-ShootProof.Cli.Command.PushCommand.html#358-392" title="Go to source code">createAlbum</a>( <span><code><a href="class-ShootProof.Cli.Options.html">ShootProof\Cli\Options</a></code> <var>$options</var></span>, <span>string <var>$defaultName</var></span> )</code>
+
+		<div class="description short">
+			<p>Creates a new ShootProof gallery album</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates a new ShootProof gallery album</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$options</var></dt>
+					<dd></dd>
+					<dt><var>$defaultName</var></dt>
+					<dd>Name to use when creating the album if albumName option not set</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>Ordered array containing the ShootProof event ID and album ID
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-ShootProof.Cli.Command.BaseCommand.html#methods">ShootProof\Cli\Command\BaseCommand</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-ShootProof.Cli.Command.BaseCommand.html#___construct">__construct()</a>, 
+			<a href="class-ShootProof.Cli.Command.BaseCommand.html#___invoke">__invoke()</a>, 
+			<a href="class-ShootProof.Cli.Command.BaseCommand.html#_getFileList">getFileList()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-ShootProof.Cli.Command.HelpableCommandInterface.html#methods">ShootProof\Cli\Command\HelpableCommandInterface</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-ShootProof.Cli.Command.HelpableCommandInterface.html#_configureHelp">configureHelp()</a>
+		</code></td>
+	</tr>
+	</table>
+
+	<table class="summary used">
+	<caption>Methods used from <a href="class-ShootProof.Cli.Command.HelpableCommandTrait.html#methods">ShootProof\Cli\Command\HelpableCommandTrait</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-ShootProof.Cli.Command.HelpableCommandTrait.html#_configureHelp">configureHelp()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="usage" id="$usage">
+		<td class="attributes"><code>
+			public static 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-ShootProof.Cli.Command.PushCommand.html#35-38" title="Go to source code"><var>$usage</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$usage" class="anchor">#</a>
+				<code><span class="php-quote">'push [options] [&lt;dir&gt;]'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="description" id="$description">
+		<td class="attributes"><code>
+			public static 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-ShootProof.Cli.Command.PushCommand.html#40-82" title="Go to source code"><var>$description</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$description" class="anchor">#</a>
+				<code><span class="php-quote">&lt;&lt;&lt;TEXT
+Uploads photos in a directory or set of directories to a ShootProof
+event or album. Choose between the two using the --target-event
+parameter.
+
+If no event or album ID is passed, a new ShootProof event or album
+will be created automatically using the name of the directory. If
+--event-name or --album-name is passed, it will be created with the
+specified name. Additional album settings may be passed with
+--parent-album and --album-password.
+
+Push will compare the photos on ShootProof with the ones in a
+directory. New photos will be added to ShootProof; any photos not in
+the directory will be deleted from ShootProof. If the --replace
+option is specified, then matching photos in ShootProof will be
+overwritten with the ones from the directory.
+
+If the --preview option is passed, then the operation will not
+actually execute, but a preview of the operation will be output.
+
+If no directory is specified, the current directory will be used.
+Glob expressions are supported for processing multiple directories
+(each matching directory will be pushed to a separate ShootProof
+event or album). Alternately, a list of directories may be piped
+into this command.
+
+Options for this command may also be set in a .shootproof file in the
+directory:
+
+    target=&lt;target&gt;
+    event=&lt;eventId&gt;
+    eventName=&lt;name&gt;
+    album=&lt;albumId&gt;
+    parentAlbum=&lt;parentAlbumId&gt;
+    albumName=&lt;name&gt;
+    albumPassword=&lt;password&gt;
+
+After this command completes successfully, a .shootproof file will be
+written to the directory for use in subsequent runs.
+TEXT</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="options" id="$options">
+		<td class="attributes"><code>
+			public static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-ShootProof.Cli.Command.PushCommand.html#84-97" title="Go to source code"><var>$options</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$options" class="anchor">#</a>
+				<code>[
+    <span class="php-quote">'target:'</span> =&gt; <span class="php-quote">'ShootProof upload target (specify event or album)'</span>,
+    <span class="php-quote">'event:'</span> =&gt; <span class="php-quote">'ShootProof event ID'</span>,
+    <span class="php-quote">'event-name:'</span> =&gt; <span class="php-quote">'ShootProof event name'</span>,
+    <span class="php-quote">'album:'</span> =&gt; <span class="php-quote">'ShootProof album ID'</span>,
+    <span class="php-quote">'parent-album:'</span> =&gt; <span class="php-quote">'ShootProof parent album ID'</span>,
+    <span class="php-quote">'album-name:'</span> =&gt; <span class="php-quote">'ShootProof album name'</span>,
+    <span class="php-quote">'album-password:'</span> =&gt; <span class="php-quote">'ShootProof album password'</span>,
+    <span class="php-quote">'replace'</span> =&gt; <span class="php-quote">'Replaces files on ShootProof with local files if the names match'</span>,
+    <span class="php-quote">'preview'</span> =&gt; <span class="php-quote">'Preview this operation, but do not apply any changes'</span>,
+]</code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-ShootProof.Cli.Command.BaseCommand.html#properties">ShootProof\Cli\Command\BaseCommand</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-ShootProof.Cli.Command.BaseCommand.html#$api"><var>$api</var></a>, 
+			<a href="class-ShootProof.Cli.Command.BaseCommand.html#$logger"><var>$logger</var></a>, 
+			<a href="class-ShootProof.Cli.Command.BaseCommand.html#$stdio"><var>$stdio</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		ShootProof Command Line Tool API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
